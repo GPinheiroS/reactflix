@@ -1,0 +1,29 @@
+.BarraSelecao {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0px;
+  height: 100vh;
+  width: 400px;
+  background-color: rgb(65, 19, 82);
+}
+.selecao {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 120px;
+  padding: 15px;
+  border: solid white 1px;
+}
+.selectButton {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  text-align: left;
+  font-size: 22px;
+  font-family: sans-serif;
+  color: white;
+}
+.selectButton:hover {
+  color: rgb(203, 60, 255);
+  cursor: pointer;
+}

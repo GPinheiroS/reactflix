@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  margin: 0;
+  padding: 15px;
+  height: 60px;
+
+  background-color: rgb(50, 22, 61);
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+}

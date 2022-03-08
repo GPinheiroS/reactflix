@@ -1,0 +1,30 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(71, 35, 83);
+}
+
+.App {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.contentWrapper {
+  display: flex;
+  position: relative;
+  align-content: center;
+}
+.videoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 840px;
+  padding: 20px;
+}
