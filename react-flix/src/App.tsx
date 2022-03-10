@@ -12,9 +12,7 @@ function App() {
     <Provider store={store}>
     <Header/>
       <div className='contentWrapper'>
-        <div className='videoBox'>
-          <Video/>
-        </div>
+        <Video/>
         <SideBar/>
       </div>
       </Provider>

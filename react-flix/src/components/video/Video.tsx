@@ -4,16 +4,17 @@ import './Video.css';
 import { connect , RootStateOrAny } from 'react-redux';
 
 
-const Video = ({videos}:any) => {
-    
+const Video = ({atual}:any) => {
     return (
-        <>
-        <h2>{videos.title}</h2>
-        <ReactPlayer 
+        <div className='videoBox'>
+        <h2>{atual.title}</h2>
+        <ReactPlayer
+        width={854}
+        height={480}
         controls={true}
-        url={videos.local} />
-        </>
+        url={atual.local} />
+        </div>
     );
 };
 
-export default connect((state:RootStateOrAny) => ({videos:state.atual}))(Video);
+export default connect((state:RootStateOrAny) => ({atual:state.atual}))(Video);

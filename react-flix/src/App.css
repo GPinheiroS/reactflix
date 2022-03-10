@@ -1,11 +1,11 @@
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: rgb(71, 35, 83);
+  background-color: #472353;
 }
 
 .App {
@@ -19,12 +19,6 @@ body {
   display: flex;
   position: relative;
   align-content: center;
+  height: 100vh;
 }
-.videoBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 840px;
-  padding: 20px;
-}
+
