@@ -2,7 +2,7 @@ import React, {FunctionComponent} from 'react';
 import './SideBar.css'
 import { connect , RootStateOrAny } from 'react-redux';
 import { useDispatch } from 'react-redux'
-import { isVisible } from '@testing-library/user-event/dist/utils';
+
 
 let aberto:boolean = false
 const ToggleVideoMenu = (e:any) =>{ 
@@ -10,12 +10,10 @@ const ToggleVideoMenu = (e:any) =>{
     if(e){
         aberto= !aberto
     }
-    console.log(aberto)
     if(aberto === true){
         menu.style.display = "block"
     } else { menu.style.display = "none"}
 }
-    
 
 const SideBar:FunctionComponent = ({select}:any) => {
     const dispatch = useDispatch()
@@ -36,8 +34,7 @@ const SideBar:FunctionComponent = ({select}:any) => {
                     {youtuber.videos.map( (videos:any)  => (
                         <li key={videos.id} className='selectButton' onClick={()=> dispatch(trocarVideo(videos))}>{videos.title}
                         </li>
-                    ) )}
-
+                    ))}
                     </ul>
                     </div>
                 </li>

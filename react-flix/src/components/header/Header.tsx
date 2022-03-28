@@ -3,10 +3,9 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <header>
+        <div className='header'>
             React-flix
-        </header>
+        </div>
     );
 };
-
 export default Header;

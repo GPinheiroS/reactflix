@@ -4,12 +4,19 @@
   height: 100%;
   width: 300px;
   background-color: #3c114b;
+  box-sizing: content-box;
 }
 .barraSelecao {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow-y: auto;
+  scroll-behavior: unset;
+  scroll-snap-type: y mandatory;
   height: 100%;
+}
+.barraSelecao::-webkit-scrollbar {
+  display: none;
 }
 .barraSelecao ul {
   width: 100%;
