@@ -1,0 +1,69 @@
+.addModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  box-sizing: border-box;
+  align-self: center;
+  top: -50px;
+  z-index: 1;
+  width: 500px;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #330c41;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.md-show {
+  opacity: 1;
+  top: 50px;
+  visibility: visible;
+}
+.addModal input {
+  height: 35px;
+  width: 380px;
+  border: solid 1px white;
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding-left: 5px;
+  background-color: #451c52;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+}
+.btnBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: fit-content;
+}
+.btn {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  width: 100px;
+  height: 30px;
+  padding: 4px;
+  border: solid 1px white;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #431253;
+  cursor: pointer;
+}
+.Cancelar{
+    background-color: #640b0b;
+}
+.Cancelar:hover{
+    background-color: #410c0c;
+}
