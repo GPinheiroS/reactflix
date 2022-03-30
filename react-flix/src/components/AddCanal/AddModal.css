@@ -8,9 +8,11 @@
   align-self: center;
   top: -50px;
   z-index: 1;
+
   width: 500px;
   height: fit-content;
   padding: 20px;
+  gap: 10px;
   border-radius: 30px;
   background-color: #330c41;
   font-size: 14px;
@@ -30,20 +32,52 @@
   width: 380px;
   border: solid 1px white;
   border-radius: 5px;
-  margin: 10px 0px;
+  margin: 10px 0px 0px;
   padding-left: 5px;
   background-color: #451c52;
   font-size: 14px;
   color: white;
   font-family: sans-serif;
 }
-.btnBox{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 380px;
-    height: fit-content;
+.addModal ul {
+  list-style: none;
+  width: 380px;
+  height: max-content;
+}
+.addModal li {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  background-color: #491558;
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+}
+.adicionarVideo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 380px;
+}
+.adicionarVideo input {
+  height: 35px;
+  width: 170px;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+}
+.btnBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: fit-content;
 }
 .btn {
   display: flex;
@@ -57,13 +91,22 @@
   border: solid 1px white;
   border-radius: 5px;
 }
+.addVideo {
+  position: absolute;
+  align-self: flex-end;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  left: calc(100% + 10px);
+  bottom: 4%;
+}
 .btn:hover {
   background-color: #431253;
   cursor: pointer;
 }
-.Cancelar{
-    background-color: #640b0b;
+.Cancelar {
+  background-color: #640b0b;
 }
-.Cancelar:hover{
-    background-color: #410c0c;
+.Cancelar:hover {
+  background-color: #410c0c;
 }
