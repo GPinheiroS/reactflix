@@ -75,3 +75,28 @@
   background-color: #20002a;
   cursor: pointer;
 }
+.btnBoxCanal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 90%;
+  max-height: 60px;
+  height: 100%;
+  width: 30px;
+}
+.btnShow {
+  display: none;
+}
+.btnCanal {
+  position: relative;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.apagarCanal {
+  background-color: #960e0e;
+}
+.editar {
+  background-color: #20002a;
+  color: white;
+}

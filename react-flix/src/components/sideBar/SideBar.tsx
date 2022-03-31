@@ -36,7 +36,13 @@ const SideBar:FunctionComponent = ({select}:any) => {
         <ul className='barraSelecao'>
             {select.map( (youtuber:any, index:number) => (
                 <li key={youtuber.id} className='selecao'>
-                    <button className='selectButton' onClick={()=>ToggleVideoMenu(index)}>{youtuber.nome}</button>
+                    <button className='selectButton' onClick={()=>ToggleVideoMenu(index)}>{youtuber.nome}
+                    <div className='btnBoxCanal'>
+                    <button className='btnCanal apagarCanal'>X</button>
+                    <button className='btnCanal editar'>E</button>
+                    </div>
+                    </button>
+                    
                     <div className={accordionArray[index]? 'menuVideo open':  'menuVideo'}>
                     <ul>
                     {youtuber.videos.map( (videos:any)  => (

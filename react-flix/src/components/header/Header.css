@@ -14,7 +14,7 @@
   font-family: sans-serif;
   font-size: 20px;
 }
-.AddCanal {
+.btn {
   display: flex;
   font-size: 12px;
   align-items: center;
@@ -24,6 +24,14 @@
   padding: 4px;
   border: solid 1px white;
   border-radius: 5px;
+}
+.HeaderBtnBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: auto;
 }
 .AddCanal:hover {
   background-color: #380d46;
