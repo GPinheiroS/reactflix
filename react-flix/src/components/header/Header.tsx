@@ -15,7 +15,7 @@ const ShowEdit = () =>{
     //     console.log(canal)
     // ))
     for (let index = 0; index < select.length; index++) {
-        let btnBox = canais[index].firstChild.lastChild
+        let btnBox = canais[index].firstChild.nextSibling
         btnBox.classList.toggle('btnShow')
     }
 

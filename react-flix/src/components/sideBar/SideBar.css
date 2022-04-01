@@ -92,12 +92,20 @@
   position: relative;
   border: none;
   width: 100%;
-  height: 100%;
+  height: 30px;
+  cursor: pointer;
 }
 .apagarCanal {
   background-color: #960e0e;
 }
+.apagarCanal:hover {
+  background-color: #830c0c;
+}
 .editar {
+  background-color: #4d0064;
+  color: white;
+}
+.editar:hover {
   background-color: #20002a;
   color: white;
 }

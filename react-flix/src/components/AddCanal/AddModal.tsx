@@ -16,9 +16,7 @@ const AddModal = ({select}:any) => {
     const AddVideo = () =>{
         const inputTituloVideo:any = document.querySelector('#TituloVideo')
         const inputUrlVideo:any = document.querySelector('#LinkVideo')
-        console.log('Lista de Videos:', ListaVideo)
         if(inputTituloVideo.value != '' && inputUrlVideo.value != ''){
-        console.log('passou')
         let NovoVideo ={
         id: (ListaVideo.length + 1),
         title: inputTituloVideo.value,

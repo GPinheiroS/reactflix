@@ -12,6 +12,9 @@ const reducer = (state:videoData.state = videoData.initialState , action:AnyActi
         break;
         case "SALVAR_CANAL":
         return {...state, select: action.ListaNova}
+        break;  
+        case "REMOVER_CANAL":
+        return {...state, select: action.ListaNova}
         break;
         default:
         return state
